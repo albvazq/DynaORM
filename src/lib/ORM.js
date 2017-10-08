@@ -105,7 +105,7 @@ export default class ORM {
             return new Promise(function(resolve, reject) {
                 var params = {
                     'TableName': tableName(_object, true),
-                    'Item': _object.serialize()
+                    'Item': _object
                 };
                 _self.client.put(params, function(err, data) {
                     if (err) {
