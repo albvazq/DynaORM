@@ -1,4 +1,4 @@
-import DB from "../core/DB";
+import DB from "./DB";
 
 export default class Model {
 
