@@ -1,6 +1,6 @@
 * <a href="#introduction">Introduction</a>
 * <a href="#initialization">Initialization</a>
-* <a href="#creatingmodel">Creating a model</a>
+* <a href="#creating-a-model">Creating a model</a>
 * <a href="#awsdynamoinstance">AWS DynamoDB instance</a>
 * <a href="#createsavedelete">Creating, saving and deleting objects</a>
 	* Create
@@ -13,14 +13,13 @@
 
 ## Introduction
 
-<p id="introduction">This library was witten to work as an ES6 library. But if you need to use it with a prev version of JavaScript you can transpile your code using the command (after run npm install):</p>
+This library was witten to work as an ES6 library. But if you need to use it with a prev version of JavaScript you can transpile your code using the command (after run npm install):
 
 ```
 npm run build && npm run test
 ```
 
 ## Initialization
-<p id="initialization"></p>
 
 You can initialize your database with:
 
@@ -36,7 +35,6 @@ DB.init({
 ```
 
 ## Creating a model
-<p id="creatingmodel"></p>
 
 Inside the *Models* folder you can add new files that represents the entities in your database, for example if you have a table named **items** the model for this table would be:
 
