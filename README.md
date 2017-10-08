@@ -1,10 +1,15 @@
-<a href="#introduction">Introduction</a>
-<a href="#initialization">Initialization</a>
-<a href="#creatingmodel">Creating a model</a>
-<a href="#awsdynamoinstance">AWS DynamoDB instance</a>
-<a href="#createsavedelete">Creating, saving and deleting objects</a>
-<a href="#gettingobjects">Getting objects from the database</a>
-<a href="#donate">Donate</a>
+* <a href="#introduction">Introduction</a>
+* <a href="#initialization">Initialization</a>
+* <a href="#creatingmodel">Creating a model</a>
+* <a href="#awsdynamoinstance">AWS DynamoDB instance</a>
+* <a href="#createsavedelete">Creating, saving and deleting objects</a>
+	* Create
+	* Save
+	* Delete
+* <a href="#gettingobjects">Getting objects from the database</a>
+	* By primary key
+	* By filters
+* <a href="#donate">Donate</a>
 
 ## Introduction
 
