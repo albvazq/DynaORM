@@ -51,16 +51,6 @@ export default class Model {
         return null;
     }
 
-    serialize() {
-        let serializedObject = {};
-        for (let i in this) {
-            if (i != "primaryKey") {
-                serializedObject[i] = this[i];
-            }
-        }
-        return serializedObject;
-    }
-
     /***********************************************************************************/
 
     /* Static methods availables directly form the class without any instance */
