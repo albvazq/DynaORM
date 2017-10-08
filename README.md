@@ -19,7 +19,8 @@
 npm run build && npm run test
 ```
 
-## <p id="initialization">Initialization</p>
+## Initialization
+<p id="initialization"></p>
 
 You can initialize your database with:
 
@@ -33,7 +34,9 @@ DB.init({
 	}
 });
 ```
-## <p id="creatingmodel">Creating a model</p>
+
+## Creating a model
+<p id="creatingmodel"></p>
 
 Inside the *Models* folder you can add new files that represents the entities in your database, for example if you have a table named **items** the model for this table would be:
 
@@ -59,7 +62,8 @@ Another convention that can be changed are:
 Item.prototype["primaryKey"] = "customPrimaryKey"; //id by default
 ```
 
-## <p id="awsdynamoinstance">Accesing to *AWS.Dynamo.DocumentClient()* instance</p>
+## Accesing to *AWS.Dynamo.DocumentClient()* instance
+<p id="awsdynamoinstance"></p>
 
 You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
 
@@ -68,7 +72,8 @@ let awsDynamo = DB.DynamoClient;
 ```
 
 
-## <p id="createsavedelete">Creating, saving and deleting objects</p>
+## Creating, saving and deleting objects
+<p id="createsavedelete"></p>
 
 ### Create
 To create a new object (instance of a model) you can use:
@@ -113,7 +118,8 @@ If the object has been saved previously you can perform a **delete** action on t
 item.delete();
 ```
 
-## <p id="gettingobjects">Getting objects from the database</p>
+## Getting objects from the database
+<p id="gettingobjects"></p>
 
 ### Request a specific object using its primary key
 To request a specific object from the database you have to use the **find** method that is in the model class. You have to specify the key of the object you want to get from the database, an example of this functionality is:
@@ -139,7 +145,8 @@ Item
 	});
 ```
 
-## <p id="donate">Donate</p>
+## Donate
+<p id="donate"></p>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
