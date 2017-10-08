@@ -1,14 +1,14 @@
 * <a href="#introduction">Introduction</a>
 * <a href="#initialization">Initialization</a>
 * <a href="#creating-a-model">Creating a model</a>
-* <a href="#awsdynamoinstance">AWS DynamoDB instance</a>
-* <a href="#createsavedelete">Creating, saving and deleting objects</a>
+* <a href="#user-content-creating-saving-and-deleting-objects">Creating, saving and deleting objects</a>
 	* Create
 	* Save
 	* Delete
-* <a href="#gettingobjects">Getting objects from the database</a>
+* <a href="#user-content-getting-objects-from-the-database">Getting objects from the database</a>
 	* By primary key
 	* By filters
+* <a href="#user-content-accesing-to-awsdynamodocumentclient-instance">AWS DynamoDB instance</a>
 * <a href="#donate">Donate</a>
 
 ## Introduction
@@ -60,18 +60,7 @@ Another convention that can be changed are:
 Item.prototype["primaryKey"] = "customPrimaryKey"; //id by default
 ```
 
-## Accesing to *AWS.Dynamo.DocumentClient()* instance
-<p id="awsdynamoinstance"></p>
-
-You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
-
-```javascript
-let awsDynamo = DB.DynamoClient;
-```
-
-
 ## Creating, saving and deleting objects
-<p id="createsavedelete"></p>
 
 ### Create
 To create a new object (instance of a model) you can use:
@@ -117,7 +106,6 @@ item.delete();
 ```
 
 ## Getting objects from the database
-<p id="gettingobjects"></p>
 
 ### Request a specific object using its primary key
 To request a specific object from the database you have to use the **find** method that is in the model class. You have to specify the key of the object you want to get from the database, an example of this functionality is:
@@ -143,8 +131,16 @@ Item
 	});
 ```
 
+## Accesing to *AWS.Dynamo.DocumentClient()* instance
+<p id="awsdynamoinstance"></p>
+
+You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
+
+```javascript
+let awsDynamo = DB.DynamoClient;
+```
+
 ## Donate
-<p id="donate"></p>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
