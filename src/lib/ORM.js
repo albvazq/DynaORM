@@ -139,7 +139,6 @@ export default class ORM {
                         console.error("Unable to delete item. Error JSON:", JSON.stringify(err, null, 2));
                         reject(err);
                     } else {
-                        console.log("DeleteItem succeeded:", JSON.stringify(data, null, 2));
                         resolve(data);
                     }
                 });

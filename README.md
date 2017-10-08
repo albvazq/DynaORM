@@ -1,3 +1,18 @@
+* <a href="#introduction">Introduction</a>
+* <a href="#initialization">Initialization</a>
+* <a href="#creating-a-model">Creating a model</a>
+* <a href="#creating-saving-and-deleting-objects">Creating, saving and deleting objects</a>
+	* <a href="#create">Create</a>
+	* <a href="#save">Save</a>
+	* <a href="#delete">Delete</a>
+* <a href="#getting-objects-from-the-database">Getting objects from the database</a>
+	* <a href="#request-a-specific-object-using-its-primary-key">By primary key</a>
+	* <a href="#filter-items-from-your-database">By filters</a>
+* <a href="#accesing-to-awsdynamodocumentclient-instance">AWS DynamoDB instance</a>
+* <a href="#donate">Donate</a>
+
+## Introduction
+
 This library was witten to work as an ES6 library. But if you need to use it with a prev version of JavaScript you can transpile your code using the command (after run npm install):
 
 ```
@@ -18,6 +33,7 @@ DB.init({
 	}
 });
 ```
+
 ## Creating a model
 
 Inside the *Models* folder you can add new files that represents the entities in your database, for example if you have a table named **items** the model for this table would be:
@@ -43,15 +59,6 @@ Another convention that can be changed are:
 ```javascript
 Item.prototype["primaryKey"] = "customPrimaryKey"; //id by default
 ```
-
-## Accesing to *AWS.Dynamo.DocumentClient()* instance
-
-You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
-
-```javascript
-let awsDynamo = DB.DynamoClient;
-```
-
 
 ## Creating, saving and deleting objects
 
@@ -123,3 +130,16 @@ Item
 		
 	});
 ```
+
+## Accesing to *AWS.Dynamo.DocumentClient()* instance
+<p id="awsdynamoinstance"></p>
+
+You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
+
+```javascript
+let awsDynamo = DB.DynamoClient;
+```
+
+## Donate
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BTJPCXNPH43YC)
