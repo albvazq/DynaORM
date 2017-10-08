@@ -1,10 +1,20 @@
-This library was witten to work as an ES6 library. But if you need to use it with a prev version of JavaScript you can transpile your code using the command (after run npm install):
+<a href="#introduction">Introduction</a>
+<a href="#initialization">Initialization</a>
+<a href="#creatingmodel">Creating a model</a>
+<a href="#awsdynamoinstance">AWS DynamoDB instance</a>
+<a href="#createsavedelete">Creating, saving and deleting objects</a>
+<a href="#gettingobjects">Getting objects from the database</a>
+<a href="#donate">Donate</a>
+
+## Introduction
+
+<p id="introduction">This library was witten to work as an ES6 library. But if you need to use it with a prev version of JavaScript you can transpile your code using the command (after run npm install):</p>
 
 ```
 npm run build && npm run test
 ```
 
-## Initialization
+## <p id="initialization">Initialization</p>
 
 You can initialize your database with:
 
@@ -18,7 +28,7 @@ DB.init({
 	}
 });
 ```
-## Creating a model
+## <p id="creatingmodel">Creating a model</p>
 
 Inside the *Models* folder you can add new files that represents the entities in your database, for example if you have a table named **items** the model for this table would be:
 
@@ -44,7 +54,7 @@ Another convention that can be changed are:
 Item.prototype["primaryKey"] = "customPrimaryKey"; //id by default
 ```
 
-## Accesing to *AWS.Dynamo.DocumentClient()* instance
+## <p id="awsdynamoinstance">Accesing to *AWS.Dynamo.DocumentClient()* instance</p>
 
 You can access directly to this instance if you want to perform some actions directly with te API of this class, to do this the code would be:
 
@@ -53,7 +63,7 @@ let awsDynamo = DB.DynamoClient;
 ```
 
 
-## Creating, saving and deleting objects
+## <p id="createsavedelete">Creating, saving and deleting objects</p>
 
 ### Create
 To create a new object (instance of a model) you can use:
@@ -98,7 +108,7 @@ If the object has been saved previously you can perform a **delete** action on t
 item.delete();
 ```
 
-## Getting objects from the database
+## <p id="gettingobjects">Getting objects from the database</p>
 
 ### Request a specific object using its primary key
 To request a specific object from the database you have to use the **find** method that is in the model class. You have to specify the key of the object you want to get from the database, an example of this functionality is:
@@ -123,3 +133,12 @@ Item
 		
 	});
 ```
+
+## <p id="donate">Donate</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="BTJPCXNPH43YC">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
